@@ -2,25 +2,15 @@ import os, time
 from PIL import Image, ImageOps, ImageFont
 # from waveshare_epd import epd7in3f  # Use your exact model
 import logging
+from config import *
 
 logging.basicConfig(level=logging.DEBUG)
 
 # Pic Dir
 picdir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'pic')
 
-# --- CONFIGURATION ---
-URL = "https://kuma.nstudios.dev/status/services"
-
 IMG_PATH = os.path.join(picdir, "screenshot.png")
 OUTPUT_PATH = os.path.join(picdir, "kuma-epaper.png")
-
-EPAPER_WIDTH = 800
-EPAPER_HEIGHT = 480
-
-CROP_TOP = 200
-CROP_BOTTOM = 80
-CROP_LEFT = 40
-CROP_RIGHT = 40
 
 start_time = time.time()
 

@@ -33,7 +33,7 @@ def run_slideshow():
         files = get_image_files()
         if not files:
             print("No images found.")
-            time.sleep(10)
+            time.sleep(50)
             continue
         for file_path in files:
             try:
